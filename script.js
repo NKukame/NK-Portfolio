@@ -5,3 +5,6 @@ for(i = 0; i < accordion.length; i++){
         this.classList.toggle('active')
     })
 }
+
+var copy = document.querySelector(".logo-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
