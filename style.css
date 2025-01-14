@@ -238,6 +238,10 @@
     
 }
 
+.about-page-static-text{
+    margin-top: 5%;
+}
+
 .about-wrapper .dynamic-text{
     margin-left: 15px;
     line-height: 50px;
@@ -327,11 +331,22 @@
     overflow: hidden;
     transition: 0.5s;
     overflow-y: auto;
+    line-height: 30px;
 }
 
 .accordion .content-box.active .content{
     height: auto;
     padding: 10px;
+}
+
+.about-page{
+    background-color: var(--black);
+
+    gap: 20%;
+}
+
+.about-me-page{
+    margin-top: 0%;
 }
 
 /* Portfolio */
@@ -352,7 +367,7 @@
 
 .portfolio-dot-container{
     display: flex;
-    transform: translateY(290%); 
+    transform: translateY(255%); 
     flex-direction: column; 
     gap: 25px;
 }
@@ -363,7 +378,7 @@
 
 .logos{
     overflow: hidden;
-    padding: 60px 0;
+    padding: 20px 0;
     white-space: nowrap;
     position: relative;
     width: 100%;
@@ -389,15 +404,16 @@
 }
 
 .logo-slide{
-    display: inline-block;
+    display: inline-flex;
     animation: 15s logo-slider infinite linear;
 }
 
 .logo-slide img{
     margin: 0 23px;
+    width: 100px;
 }
 
-.logos:hover{
+.logos:hover .logo-slide{
     animation-play-state: paused;
 }
 
@@ -407,7 +423,7 @@
     align-items: center;
     flex-direction: column;
     gap: 60px;
-    margin-top: calc(1% - 85px);
+
     margin-bottom: 10px;
 }
 
@@ -421,27 +437,276 @@
 .portfolio-clip{
     width: 40%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-left: 8%;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
 }
 
 .portfolio-card-text{
    display: flex;
    flex-direction: column;
-   margin-top: 15%;
+   margin-left: 15px;
+   justify-content: flex-end;
 }
 
 .portfolio-card-text p{
     text-wrap: wrap;
-    width: 50%;
+    width: 55%;
 }
 
 .portfolio-card-text h2{
     font-size: 30px;
     border-top: solid var(--white);
     margin-top: 10px;
-    width: 50%;
+    width: 55%;
 }
+
+.project-link{
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+}
+
+.project-link:hover{
+    color: var(--orange);
+}
+
+.portfolio-card:nth-of-type(2n+1):not(:first-of-type) {
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.portfolio-card:nth-of-type(2n+1):not(:first-of-type) .portfolio-clip {
+    margin-left: 0;
+    margin-right: 8%;
+}
+
+.portfolio-card:nth-of-type(2n+1):not(:first-of-type) .portfolio-card-text {
+    align-items: flex-end;
+    margin-right: 2%;
+    text-align: right;
+}
+
+.portfolio-page{
+    background-color: var(--black);
+}
+
+.orange-text{
+    color: var(--orange);
+}
+
+/* Contact Page */
+
+.contact-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-body h1{
+    font-size: 55px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background-color: var(--orange);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 5%;
+  }
+  
+  .message {
+    color: var(--black);
+    font-size: 14px;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--black);
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: var(--black);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: var(--orange);
+  }
+  
+  .input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--black);
+  }
+  
+  .form label .input01 + span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: var(--black);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input01:placeholder-shown + span {
+    top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input01:focus + span,.form label .input01:valid + span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input01:valid + span {
+    color: var(--orange);
+  }
+  
+  .fancy {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: var(--black);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+  }
+  
+  .fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: var(--black);
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transform-origin: center;
+    transition: 0.3s linear, width 0.3s linear;
+  }
+  
+  .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: var(--black);
+    transform: translateX(30%);
+  }
+  
+  .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: var(--white);
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: var(--white);
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: var(--white);
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy:hover {
+    color: var(--white);
+    background: var(--black);
+  }
+  
+  .fancy:hover::before {
+    width: 1.5rem;
+    background: var(--white);
+  }
+  
+  .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+  }
+  
+  .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+  }
+  
+  .fancy:hover .bottom-key-1,
+   .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
 
 ::-webkit-scrollbar{
     width: 7px;

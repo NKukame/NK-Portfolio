@@ -8,3 +8,20 @@ for(i = 0; i < accordion.length; i++){
 
 var copy = document.querySelector(".logo-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
+
+
+const allDots = document.querySelectorAll('.about-dot, .portfolio-dot, .dot');
+
+
+allDots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        
+        const targetId = dot.getAttribute('data-target');
+        const targetSection = document.getElementById(targetId);
+       
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+

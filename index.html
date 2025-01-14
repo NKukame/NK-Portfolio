@@ -1,188 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Njabulo Kukame Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container" id="main-body">
+      <video autoplay loop muted plays-inline class="background-clip">
+        <source src="img/150540-798555688.mp4" type="video/mp4" />
+      </video>
 
+      <header class="header">
+        <div class="logo">
+          <div class="circle">
+            <a href="index.html">NK</a>
+          </div>
+          <h1>Njabulo</h1>
+        </div>
+        <nav class="navbar">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="contact.html" class="nav-link">Contact Me</a>
+        </nav>
+      </header>
 
-    <div class="container">
-        
-        <video autoplay loop muted plays-inline class="background-clip">
-            <source src="img/150540-798555688.mp4" type="video/mp4">
-        </video>
+      <main>
+        <div class="dot-container">
+          <div class="dot" data-target="main-body"></div>
+          <div class="dot" data-target="about-main-body"></div>
+          <div class="dot" data-target="portfolio-body"></div>
+        </div>
 
-        <header class="header">
-            <div class="logo">
-                <div class="circle">
-                    <a href="index.html">NK</a>
+        <div class="main-body">
+          <h1>Learn About Me</h1>
+          <p>
+            Hi, My Name Is Njabulo Kukame. I Am A Software Developer<br />
+            Hailing From Johannesburg, Soweto.
+          </p>
+          <a href="docs/Njabulo Sihle Kukame Resume.pdf" download="Njabulo Sihle Kukame Resume">Download My CV</a>
+        </div>
+
+        <div class="about-me-body" id="about-main-body">
+          <h1>About Me</h1>
+
+          <div class="about-dot-container">
+            <div class="about-dot" data-target="main-body"></div>
+            <div class="about-dot" data-target="about-main-body"></div>
+            <div class="about-dot" data-target="portfolio-body"></div>
+          </div>
+
+          <div class="about-main-body">
+            <div class="about-wrapper">
+              <div class="static-text">I'm A</div>
+
+              <ul class="dynamic-text">
+                <li><span class="text-gradient">Developer</span></li>
+                <li><span class="text-gradient">Freelancer</span></li>
+                <li><span class="text-gradient">Designer</span></li>
+                <li><span class="text-gradient">Creator</span></li>
+              </ul>
+            </div>
+
+            <p class="about-p">
+              I'm a passionate developer with a keen eye for design and
+              functionality. I specialize in building engaging and user-friendly
+              web applications, with a focus on crafting seamless e-commerce
+              experiences. From creating intuitive interfaces to implementing
+              dynamic features, I enjoy every step of bringing ideas to life.
+              Outside of coding, I love exploring design trends and finding
+              creative solutions to complex problems. Let's connect and build
+              something amazing together!
+            </p>
+
+            <div class="accordion">
+              <div class="content-box">
+                <div class="label">My Journey</div>
+                <div class="content">
+                  <p>
+                    + Finished High School in 2020 at Hoerskool President High
+                    School.
+                  </p>
+                  <p>
+                    + Started Studying At Boston City Campus In 2021, Studying
+                    Software Development.
+                  </p>
+                  <p>
+                    + Finished My Qualification in 2023 and Graduated in 2024.
+                  </p>
+                  <p>
+                    + I Joined Afrika Tikkun Services In 2024 For Their Software
+                    Development Learnership.
+                  </p>
+                  <p>
+                    + I Got The Opportunity To Become A Full Stack Software
+                    Developer Intern At DVT Software.
+                  </p>
                 </div>
-                <h1>Njabulo</h1>
-            </div>
-            <nav class="navbar">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="" class="nav-link">Portfolio</a>
-                <a href="" class="nav-link">About Me</a>
-                <a href="" class="nav-link">Contact Me</a>
-            </nav>
-        </header>
+              </div>
 
-        <main>
-            <div class="dot-container">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+              <div class="content-box">
+                <div class="label">My Goals</div>
+                <div class="content">
+                  <p>- Become A Senior Software Developer.</p>
+                  <p>- Become A CEO Of An IT Company.</p>
+                  <p>- Buy A Mercedes-Benz W201 190E.</p>
+                  <p>- Get Married and Have My Own Family.</p>
+                </div>
+              </div>
+
+              <div class="content-box">
+                <div class="label">My Interests</div>
+                <div class="content">
+                  <p>+ Gaming(Xbox, PlayStation).</p>
+                  <p>+ Cars.</p>
+                  <p>+ Soccer.</p>
+                  <p>+ TV Series.</p>
+                  <p>+ Music.</p>
+                </div>
+              </div>
+
+              <div class="content-box">
+                <div class="label">My Skills & Accomplishments</div>
+                <div class="content">
+                  <p>
+                    -
+                    <span class="orange-text">Programming Languages:</span>
+                    Java, PHP, HTML, CSS, JavaScript, MySQL, React.
+                  </p>
+                  <p>
+                    - <span class="orange-text">Soft Skills:</span> Team Work,
+                    Designing, Problem Solving, Creativity.
+                  </p>
+                  <p>
+                    - <span class="orange-text">Additional Skills:</span> Figma,
+                    Software Testing, Git & GitHub.
+                  </p>
+                  <p>
+                    -
+                    <span class="orange-text">Accomplishments:</span> Graduated
+                    From A Program Hosted By Gordon's Institute Of Business
+                    Science.
+                  </p>
+                  <p>
+                    - <span class="orange-text">Certificates:</span> Oracle
+                    Certified Associate(1Z0-808), Oracle Certified Foundations
+                    Associate(1Z0-811), CompTIA A+, CompTIA Security+.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-body" id="portfolio-body">
+          <h1>Portfolio</h1>
+          <div class="portfolio-dot-container">
+            <div class="portfolio-dot" data-target="main-body"></div>
+            <div class="portfolio-dot" data-target="about-main-body"></div>
+            <div class="portfolio-dot" data-target="portfolio-body"></div>
+          </div>
+
+          <div class="portfolio-main">
+            <div class="logos">
+              <div class="logo-slide">
+                <img src="icons/icons8-css-100.png" alt="" />
+                <img src="icons/icons8-html-100.png" alt="" />
+                <img src="icons/icons8-java-100.png" alt="" />
+                <img src="icons/icons8-javascript-100.png" alt="" />
+                <img src="icons/icons8-mysql-100.png" alt="" />
+                <img src="icons/icons8-php-100.png" alt="" />
+                <img src="icons/icons8-python-100.png" alt="" />
+                <img src="icons/icons8-react-100.png" alt="" />
+                <img src="icons/icons8-tailwind-css-100.png" alt="" />
+                <img src="icons/icons8-postgresql-100.png" alt="" />
+              </div>
             </div>
 
-            <div class="main-body">
-                <h1>Learn About Me</h1>
-                <p>Hi, My Name Is Njabulo Kukame. I Am A Software Developer<br>
-                    Hailing From Johannesburg, Soweto. 
+            <div class="portfolio-card">
+              <video autoplay loop muted plays-inline class="portfolio-clip">
+                <source src="img/Kona.mp4" type="video/mp4" />
+              </video>
+              <div class="portfolio-card-text">
+                <p>
+                  A website is built to showcase the wide range of services
+                  offered, including: Security Solutions ,Renovation Solutions
+                  and Electronic Solutions. Made with React.
                 </p>
-                <a href="">Download My CV</a>   
+                <a href="https://amandascents.netlify.app/" class="project-link"
+                  >Click Here For The Link</a
+                >
+                <h2>Kona <span class="orange-text">Fragrance</span></h2>
+              </div>
             </div>
 
-            <div class="about-me-body">
-
-                <h1>About Me</h1>
-
-                <div class="about-dot-container">
-                    <div class="about-dot"></div>
-                    <div class="about-dot"></div>
-                    <div class="about-dot"></div>
-                </div>
-
-                <div class="about-main-body">
-
-                    <div class="about-wrapper">
-
-                        <div class="static-text">I'm A </div>
-
-                        <ul class="dynamic-text">
-                            <li><span class="text-gradient">Developer</span></li>
-                            <li><span class="text-gradient">Freelancer</span></li>
-                            <li><span class="text-gradient">Designer</span></li>
-                            <li><span class="text-gradient">Creator</span></li>
-                        </ul>
-
-                    </div>
-
-                    <p class="about-p">
-                        I'm a passionate developer with a keen eye for design and 
-                        functionality. I specialize in building engaging and user-friendly 
-                        web applications, with a focus on crafting seamless e-commerce 
-                        experiences. From creating intuitive interfaces to implementing 
-                        dynamic features, I enjoy every step of bringing ideas to life. 
-                        Outside of coding, I love exploring design trends and finding 
-                        creative solutions to complex problems. Let's connect and 
-                        build something amazing together!
-                    </p>
-
-                    <div class="accordion">
-
-                        <div class="content-box">
-                            <div class="label">My Journey</div>
-                            <div class="content">
-                                <p>+ Finished High School in 2020 at Hoerskool President High School.</p>
-                                <p>+ Started Studying At Boston City Campus In 2021, Studying Software Development.</p>
-                                <p>+ Finished My Qualification in 2023 and Graduated in 2024.</p>
-                                <p>+ I Joined Afrika Tikkun Services In 2024 For Their Software Development Learnership.</p>
-                                <p>+ I Got The Opportunity To Become A Full Stack Software Developer Intern At DVT Software.</p>
-                            </div>
-                        </div>
-
-                        <div class="content-box">
-                            <div class="label">My Goals</div>
-                            <div class="content">
-                                <p>- Become A Senior Software Developer.</p>
-                                <p>- Become A CEO Of An IT Company.</p>
-                                <p>- Buy A Mercedes-Benz W201 190E.</p>
-                                <p>- Get Married and Have My Own Family.</p>
-                            </div>
-                        </div>
-
-                        <div class="content-box">
-                            <div class="label">My Interests</div>
-                            <div class="content">
-                                <p>+ Gaming(Xbox, PlayStation).</p>
-                                <p>+ Cars.</p>
-                                <p>+ Soccer.</p>
-                                <p>+ TV Series.</p>
-                                <p>+ Music.</p>
-                            </div>
-                        </div>
-
-                        <div class="content-box">
-                            <div class="label">My Skills & Accomplishments</div>
-                            <div class="content">
-                                <p>- Programming Languages: Java, PHP, HTML, CSS, JavaScript, MySQL, React.</p>
-                                <p>- Soft Skills: Team Work, Designing, Problem Solving, Creativity.</p>
-                                <p>- Additional Skills: Figma, Software Testing, Git & GitHub.</p>
-                                <p>- Accomplishments: Graduated From A Program Hosted By Gordon's Institute Of Business Science.</p>
-                                <p>- Certificates: Oracle Certified Associate(1Z0-808), Oracle Certified Foundations Associate(1Z0-811), 
-                                        CompTIA A+, CompTIA Security+.
-                                </p>                        
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="portfolio-card">
+              <video autoplay loop muted plays-inline class="portfolio-clip">
+                <source src="img/VLSY Trading.mp4" type="video/mp4" />
+              </video>
+              <div class="portfolio-card-text">
+                <p>
+                  A website is built to showcase the wide range of services
+                  offered, including: Security Solutions ,Renovation Solutions
+                  and Electronic Solutions. Made with React.
+                </p>
+                <a href="https://vlsytrading.netlify.app/" class="project-link"
+                  >Click Here For The Link</a
+                >
+                <h2>VLSY <span class="orange-text">Trading</span></h2>
+              </div>
             </div>
+          </div>
 
-            <div class="portfolio-body">
-                <h1>Portfolio</h1>
-                <div class="portfolio-dot-container">
-                    <div class="portfolio-dot"></div>
-                    <div class="portfolio-dot"></div>
-                    <div class="portfolio-dot"></div>
-                </div>
-
-                <div class="portfolio-main">
-
-                    <div class="logos">
-                        <div class="logo-slide">
-                            <img src="icons/icons8-css-100.png" alt="">
-                            <img src="icons/icons8-html-100.png" alt="">
-                            <img src="icons/icons8-java-100.png" alt="">
-                            <img src="icons/icons8-javascript-100.png" alt="">
-                            <img src="icons/icons8-mysql-100.png" alt="">
-                            <img src="icons/icons8-php-100.png" alt="">
-                            <img src="icons/icons8-python-100.png" alt="">
-                            <img src="icons/icons8-react-100.png" alt="">
-                            <img src="icons/icons8-tailwind-css-100.png" alt="">
-                            <img src="icons/icons8-postgresql-100.png" alt="">
-                        </div>
-
-                    </div>
-
-                    <div class="portfolio-card">
-                        <video autoplay loop muted plays-inline class="portfolio-clip">
-                            <source src="img/Kona.mp4" type="video/mp4">
-                        </video>
-                        <div class="portfolio-card-text">
-                            <p>
-                                A website is built to showcase the wide range of services offered, 
-                                including: Security Solutions ,Renovation Solutions and Electronic 
-                                Solutions. Made with React.
-                            </p>
-                            <h2>Kona Fragrance</h2>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </main>
+        </div>
         
-
+      </main>
     </div>
-    
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
