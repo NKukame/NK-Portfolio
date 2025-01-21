@@ -1,4 +1,4 @@
-# Portfolio README
+# Njabulo Kukame's Portfolio 
 
 - Welcome to my portfolio! This document provides an overview of the contents and features of my portfolio, showcasing my skills, projects, and professional journey.
 
