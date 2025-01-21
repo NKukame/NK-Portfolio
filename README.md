@@ -26,7 +26,7 @@ Blog Section: Insights into my technical journey and tutorials.
 
 Downloadable CV: Visitors can download my CV directly from the site.
 
-### SHowcased Projects
+### Showcased Projects
 
 - Hospital Management System
 
