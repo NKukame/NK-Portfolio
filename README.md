@@ -28,10 +28,10 @@ Downloadable CV: Visitors can download my CV directly from the site.
 
 ### Showcased Projects
 
-- Hospital Management System
+- ATM System Immulator
 
 - VLSY Trading Website
 
 - Music Review Website
 
-
+- Kona Fragrance
